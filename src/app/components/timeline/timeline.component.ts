@@ -28,17 +28,26 @@ export class TimelineComponent implements AfterViewInit {
       timelineCircle() {
         let width = 500; 
         var testData = [
-              {class: "pA", name: "person a", times: [
-                {"starting_time": 1355752800000, "ending_time": 1355759900000},
-                {"starting_time": 1355767900000, "ending_time": 1355774400000}]},
+            {class: "pA", name: "person a", times: [
+              {"starting_time": 1355752800000, "ending_time": 1355759900000},
+              {"starting_time": 1355767900000, "ending_time": 1355774400000}]},
             {class: "pB", name: "person b", times: [
                 {"starting_time": 1355759910000, "ending_time": 1355761900000}]},
             {class: "pC", name: "person c", times: [
-                {"starting_time": 1355761910000, "ending_time": 1355763910000}]}
+                {"starting_time": 1355761910000, "ending_time": 1355763910000}]},
+            {class: "pD", name: "person d", times: [
+              {"starting_time": 1355761910000, "ending_time": 1355773300000}]}
         ];
 
         var tooltip = d3.select("body")
                       .append("div")
+
+                      
+                      
+                      
+                      
+                      
+                      
                       .style("position", "absolute")
                       .style("z-index", "10")
                       .style("background-color", "#e3e3e3")
